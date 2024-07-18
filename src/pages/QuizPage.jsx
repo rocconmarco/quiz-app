@@ -2,7 +2,7 @@ import React from 'react'
 
 const QuizPage = () => {
   return (
-    <div>
+    <div className="h-screen w-screen bg-slate-100 flex flex-col items-center justify-center">
       
     </div>
   )
