@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Question = ({questionNumber}) => {
+const Question = ({questionNumber, questionText}) => {
   return (
-    <p className="font-bold text-lg">{questionNumber}. Quante materie prime consuma in media un cittadino europeo in un anno?</p>
+    <p className="font-bold text-lg">{questionNumber}. {questionText}</p>
   )
 }
 

@@ -139,3 +139,5 @@ const questionsList: Question[] = [
         correctAnswer: "Un approccio politico in cui i produttori sono responsabili dell'intero ciclo di vita dei loro prodotti, compreso lo smaltimento"
     },
 ]
+
+export default questionsList

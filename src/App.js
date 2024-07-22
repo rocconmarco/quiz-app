@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import WelcomePage from "./pages/WelcomePage";
-import QuizPage from "./pages/QuizPage";
 import InstructionsPage from "./pages/InstructionsPage";
+import QuizPage from "./pages/QuizPage.tsx";
+
 
 function App() {
   return (
