@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import QuestionCard from "../components/QuestionCard";
 import questionsList from "../questions/questions.ts";
 import logo from "../logo.png";
+import useStore from "../store/store.ts";
 
 interface Question {
   readonly id: number;
@@ -11,6 +12,9 @@ interface Question {
 }
 
 const QuizPage = () => {
+  const setCorrectAnswers = useStore((state) => state.setCorrectAnswers); 
+  const resetAnswers = useStore((state) => state.resetAnswers); 
+
   const [randomQuestions, setRandomQuestions] = useState([] as Question[]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -22,8 +26,13 @@ const QuizPage = () => {
   useEffect(() => {
     const questions = generateRandomQuestions(10);
     setRandomQuestions(questions);
+
+    const correctAnswersList = questions.map((a) => a.correctAnswer)
+    setCorrectAnswers(correctAnswersList)
+    resetAnswers()
+
     setIsLoading(false)
-  }, []);
+  }, [setCorrectAnswers, resetAnswers]);
 
   if (isLoading) {
     return (

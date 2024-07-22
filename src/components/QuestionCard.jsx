@@ -1,16 +1,37 @@
 import React, {useState} from "react";
 import Question from "./Question";
 import PossibleAnswer from "./PossibleAnswer";
+import SummaryCard from "./SummaryCard";
+import { useNavigate } from "react-router-dom";
+import useStore from "../store/store.ts";
+
 
 const QuestionCard = ({questions}) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
+  const navigate = useNavigate()
+  const addUserAnswer = useStore((state) => state.addUserAnswer)
+  const userAnswers = useStore((state) => state.userAnswers)
+  const correctAnswers = useStore((state) => state.correctAnswers)
 
   const currentQuestion = questions[currentQuestionIndex]
 
   const handleNextQuestion = () => {
-    setCurrentQuestionIndex(currentQuestionIndex + 1)
-  }
+    if (selectedAnswer !== null) {
+      addUserAnswer(selectedAnswer)
+      setSelectedAnswer(null)
+
+      if(currentQuestionIndex < questions.length - 1) {
+        setCurrentQuestionIndex(currentQuestionIndex + 1)
+      } else {
+        navigate("/summary")
+      } 
+    }
+    else {
+      console.log("Seleziona una risposta prima di continuare.")
+    }
+
+  } 
 
   const handleAnswerSelect = (answer) => {
     setSelectedAnswer(answer)
