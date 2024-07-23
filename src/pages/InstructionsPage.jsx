@@ -23,7 +23,7 @@ const InstructionsPage = () => {
         </p>
         <p>
           Il Quiz è composto da 10 domande. Fai del tuo meglio per raggiungere
-          il livello Master, ma non scoraggiarti se non le indovini tutte al
+          il livello Maestro, ma non scoraggiarti se non le indovini tutte al
           primo colpo. Il Quiz è un'occasione per ampliare le tue conoscenze e
           approfondire alcuni concetti.
         </p>

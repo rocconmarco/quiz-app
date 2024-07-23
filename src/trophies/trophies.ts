@@ -8,26 +8,28 @@ const trophiesList: Trophy[] = [
     {
         range: 0,
         title: "Ecomostro",
-        image: ""
+        image: "/img/0.png"
     },
     {
         range: [1, 2, 3, 4],
-        title: "Ecomostro",
-        image: ""
+        title: "Apprendista",
+        image: "/img/14.png"
     },
     {
         range: [5, 6, 7],
         title: "Divulgatore",
-        image: ""
+        image: "/img/57.png"
     },
     {
         range: [8, 9],
-        title: "Ecomostro",
-        image: ""
+        title: "Ricercatore",
+        image: "/img/89.png"
     },
     {
         range: 10,
-        title: "Ecomostro",
-        image: ""
+        title: "Maestro",
+        image: "/img/10.png"
     },
 ]
+
+export default trophiesList
