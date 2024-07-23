@@ -35,7 +35,7 @@ const QuestionCard = ({ questions }) => {
   };
 
   return (
-    <div className="h-auto w-[28rem] bg-gradient-to-br from-primary to-secondary p-6 text-white flex flex-col gap-4 rounded-2xl items-start justify-center">
+    <div className="h-auto mx-4 md:mx-0 md:w-[28rem] bg-gradient-to-br from-primary to-secondary p-6 text-white flex flex-col gap-4 rounded-2xl items-start justify-center">
       <Question
         questionNumber={currentQuestionIndex + 1}
         questionText={currentQuestion.question}

@@ -31,11 +31,11 @@ const SummaryCard = ({ userAnswers, correctAnswers }) => {
   };
 
   return (
-    <div className="h-auto w-[28rem] bg-gradient-to-br from-primary to-secondary p-6 text-white flex flex-col rounded-2xl items-center justify-center">
+    <div className="h-auto w-[24rem] md:w-[28rem] bg-gradient-to-br from-primary to-secondary p-6 text-white flex flex-col rounded-2xl items-center justify-center">
       <div className="flex flex-col items-center justify-center h-14 -translate-y-14">
         <img src={getTrophyImage()} className="h-48 "></img>
       </div>
-      <p className="text-[60px] font-bold">
+      <p className="text-[50px] md:text-[60px] font-bold">
           {getTrophyTitle()}
         </p>
       <p>Hai risposto correttamente a</p>

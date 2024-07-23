@@ -48,7 +48,7 @@ const QuizPage = () => {
 
 
   return (
-    <div className="h-screen w-screen bg-slate-100 flex flex-col items-center justify-center">
+    <div className="h-[100%] w-screen bg-slate-100 flex flex-col items-center justify-center overflow-hidden fixed inset-0">
       <QuestionCard questions={randomQuestions} />
     </div>
   );

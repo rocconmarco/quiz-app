@@ -7,7 +7,7 @@ const SummaryPage = () => {
   const correctAnswers = useStore((state) => state.correctAnswers);
 
   return (
-    <div className="h-screen w-screen bg-slate-100 flex flex-col items-center justify-center">
+    <div className="h-[100%] w-[100%] bg-slate-100 flex flex-col items-center justify-center overflow-hidden fixed inset-0">
       <SummaryCard userAnswers={userAnswers} correctAnswers={correctAnswers} />
     </div>
   );
