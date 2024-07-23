@@ -42,7 +42,7 @@ const SummaryCard = ({ userAnswers, correctAnswers }) => {
       <p className="font-bold text-[50px]">{rightAnswersCounter}</p>
       <p>domande su 10.</p>
       <div className="flex items-center justify-evenly gap-4 mt-4">
-        <button className="flex-1 h-14 w-44 rounded-3xl bg-gradient-to-br from-secondaryLight to-primaryLight text-white text-lg font-bold active:shadow-inner">
+        <button onClick={() => navigate("/answers")} className="flex-1 h-14 w-44 rounded-3xl bg-gradient-to-br from-secondaryLight to-primaryLight text-white text-lg font-bold active:shadow-inner">
           Risposte
         </button>
         <button

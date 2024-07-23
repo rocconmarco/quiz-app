@@ -3,6 +3,7 @@ import WelcomePage from "./pages/WelcomePage";
 import InstructionsPage from "./pages/InstructionsPage";
 import QuizPage from "./pages/QuizPage.tsx";
 import SummaryPage from "./pages/SummaryPage.jsx";
+import AnswersPage from "./pages/AnswersPage.jsx";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Route path="/instructions" element={<InstructionsPage />} />
       <Route path="/quiz" element={<QuizPage />} />
       <Route path="/summary" element={<SummaryPage />} />
+      <Route path="/answers" element={<AnswersPage />} />
     </Routes>
     </BrowserRouter>
   );

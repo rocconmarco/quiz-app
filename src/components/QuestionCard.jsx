@@ -25,8 +25,6 @@ const QuestionCard = ({ questions }) => {
       } else {
         navigate("/summary");
       }
-    } else {
-      console.log("Seleziona una risposta prima di continuare.");
     }
   };
 
