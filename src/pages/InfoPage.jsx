@@ -15,6 +15,7 @@ const InfoPage = () => {
       </div>
       <img
         src={logo}
+        alt="Logo"
         className="h-32 sm:h-36 animate-ruotaLentamente mb-8 max-w-full"
       />
       <p className="w-[80%] sm:w-[50%] lg:w-[40%]">
@@ -34,17 +35,17 @@ const InfoPage = () => {
         contattarmi tramite i canali qui sotto.
       </p>
       <div className="flex gap-4">
-        <a href="https://www.linkedin.com/in/marcoroccon" target="_blank">
+        <a href="https://www.linkedin.com/in/marcoroccon" target="_blank" rel="noreferrer">
           <button>
             <FaLinkedin fontSize={30} />
           </button>
         </a>
-        <a href="https://www.instagram.com/marco_roccon/" target="_blank">
+        <a href="https://www.instagram.com/marco_roccon/" target="_blank" rel="noreferrer">
           <button>
             <FaInstagram fontSize={30} />
           </button>
         </a>
-        <a href="https://github.com/rocconmarco" target="_blank">
+        <a href="https://github.com/rocconmarco" target="_blank" rel="noreferrer">
           <button>
             <FaGithub fontSize={30} />
           </button>

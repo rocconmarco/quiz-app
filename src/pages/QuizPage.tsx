@@ -35,13 +35,14 @@ const QuizPage = () => {
     resetAnswers()
 
     setIsLoading(false)
-  }, [setCorrectAnswers, resetAnswers]);
+  }, [setSessionQuestions, setCorrectAnswers, resetAnswers]);
 
   if (isLoading) {
     return (
       <div className="h-screen w-screen bg-slate-100 flex flex-col items-center justify-center">
         <img
         src={logo}
+        alt="Logo"
         className="h-32 sm:h-40 animate-ruotaLentamente -mt-12 mb-8"
       />
       </div>

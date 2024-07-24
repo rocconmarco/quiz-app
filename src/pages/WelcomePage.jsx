@@ -9,7 +9,7 @@ const WelcomePage = () => {
     <div className="h-[100%] w-screen bg-slate-100 flex flex-col items-center justify-center overflow-hidden fixed inset-0">
       <InfoButton />
       
-      <img src={titleLogo} className="max-w-full"></img>
+      <img src={titleLogo} alt="Quiz App" className="max-w-full"></img>
       <img
         src={logo}
         className="h-32 sm:h-40 animate-ruotaLentamente -mt-12 mb-8 max-w-full"
