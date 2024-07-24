@@ -1,6 +1,6 @@
 <br />
 <div id="readme-top" align="center">
-  <a href="https://countitup.netlify.app">
+  <a href="https://quizapp-recycle.netlify.app">
     <img src="src/logo.png" alt="Logo" width="130" height="130">
   </a>
 
@@ -42,7 +42,7 @@ Portfolio website: https://rocconmarco.github.io/<br>
 Linkedin: https://www.linkedin.com/in/marcoroccon/<br>
 GitHub: https://github.com/rocconmarco
 
-Project Link: https://thenewyorkclone.netlify.app
+Project Link: https://quizapp-recycle.netlify.app
 
 <br>
 
