@@ -1,7 +1,7 @@
 <br />
 <div id="readme-top" align="center">
   <a href="https://countitup.netlify.app">
-    <img src="src/logo.png" alt="Logo" width="150" height="150">
+    <img src="src/logo.png" alt="Logo" width="130" height="130">
   </a>
 
 <h3 align="center">Quiz App</h3>
