@@ -3,6 +3,7 @@ import QuestionCard from "../components/QuestionCard";
 import questionsList from "../questions/questions.ts";
 import useStore from "../store/store.ts";
 import logo from "../logo.png";
+import InfoButton from "../components/InfoButton.jsx";
 
 interface Question {
   readonly id: number;
@@ -52,6 +53,7 @@ const QuizPage = () => {
 
   return (
     <div className="h-[100%] w-screen bg-slate-100 flex flex-col items-center justify-center overflow-hidden fixed inset-0">
+      <InfoButton />
       <QuestionCard questions={randomQuestions} />
     </div>
   );

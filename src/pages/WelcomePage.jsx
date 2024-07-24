@@ -1,11 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import logo from "../logo.png";
 import titleLogo from "../title-logo.png";
+import { LuInfo } from "react-icons/lu";
+import InfoButton from "../components/InfoButton";
 
 const WelcomePage = () => {
     const navigate = useNavigate()
   return (
     <div className="h-[100%] w-screen bg-slate-100 flex flex-col items-center justify-center overflow-hidden fixed inset-0">
+      <InfoButton />
+      
       <img src={titleLogo} className="max-w-full"></img>
       <img
         src={logo}
