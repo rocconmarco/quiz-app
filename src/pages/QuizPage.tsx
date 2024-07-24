@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import QuestionCard from "../components/QuestionCard";
 import questionsList from "../questions/questions.ts";
-import logo from "../logo.png";
 import useStore from "../store/store.ts";
+import logo from "../logo.png";
 
 interface Question {
   readonly id: number;
@@ -12,6 +12,7 @@ interface Question {
 }
 
 const QuizPage = () => {
+  const setSessionQuestions = useStore((state) => state.setSessionQuestions)
   const setCorrectAnswers = useStore((state) => state.setCorrectAnswers); 
   const resetAnswers = useStore((state) => state.resetAnswers); 
 
@@ -28,6 +29,8 @@ const QuizPage = () => {
     setRandomQuestions(questions);
 
     const correctAnswersList = questions.map((a) => a.correctAnswer)
+    const sessionQuestionsList = questions.map((q) => q.question)
+    setSessionQuestions(sessionQuestionsList)
     setCorrectAnswers(correctAnswersList)
     resetAnswers()
 

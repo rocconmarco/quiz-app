@@ -8,7 +8,7 @@ const InstructionsPage = () => {
     <div className="h-screen w-screen bg-slate-100 flex flex-col items-center justify-center">
       <img src={logo} className="h-32 animate-ruotaLentamente mb-8" />
       <div className="h-auto mx-4 md:mx-0 md:w-[28rem] bg-gradient-to-br from-primary to-secondary p-6 text-white flex flex-col gap-6 rounded-2xl items-center justify-center">
-        <p className="">
+        <p>
           Hai mai sentito parlare di economia circolare? Un nuovo paradigma si
           sta affermando in Europa e nel mondo, dove una migliore gestione dei
           rifiuti può portare a un miglioramento delle condizioni ambientali e

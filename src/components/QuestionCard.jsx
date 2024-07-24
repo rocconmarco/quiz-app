@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Question from "./Question";
 import PossibleAnswer from "./PossibleAnswer";
-import SummaryCard from "./SummaryCard";
 import { useNavigate } from "react-router-dom";
 import useStore from "../store/store.ts";
 
@@ -10,8 +9,6 @@ const QuestionCard = ({ questions }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const navigate = useNavigate();
   const addUserAnswer = useStore((state) => state.addUserAnswer);
-  const userAnswers = useStore((state) => state.userAnswers);
-  const correctAnswers = useStore((state) => state.correctAnswers);
 
   const currentQuestion = questions[currentQuestionIndex];
 

@@ -1,13 +1,19 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import useStore from "../store/store.ts";
+import { FaArrowLeft } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const UserAnswers = ({ userAnswers, correctAnswers }) => {
+    const sessionQuestions = useStore((state) => state.sessionQuestions)
+    const navigate = useNavigate()
   return (
     <div className="h-auto w-[24rem] md:w-[28rem] bg-gradient-to-br from-primary to-secondary p-6 text-white flex flex-col rounded-2xl items-start justify-center gap-3">
+        <FaArrowLeft fontSize={20} onClick={() => navigate("/summary")} cursor={"pointer"} />
       {userAnswers.map((answer, index) => (
         <>
-          <p>{index + 1}. Ababa</p>
+          <p className="font-bold text-lg">{index + 1}. {sessionQuestions[index]}</p>
           <div className="h-auto w-[100%] border-2 border-white rounded p-2 bg-green-200 text-black">
             {correctAnswers[index]}
           </div>
