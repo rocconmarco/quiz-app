@@ -1,7 +1,7 @@
 <br />
 <div id="readme-top" align="center">
   <a href="https://countitup.netlify.app">
-    <img src="src/logo.png" alt="Logo" width="500" height="100">
+    <img src="src/logo.png" alt="Logo" width="100" height="100">
   </a>
 
 <h3 align="center">Quiz App</h3>
@@ -9,7 +9,7 @@
   <p align="center">
     Quiz App su economia circolare e riciclo.
     <br />
-    <a href="https://github.com/rocconmarco/nyt-clone"><strong>Repository GitHub »</strong></a>
+    <a href="https://github.com/rocconmarco/quiz-app"><strong>Repository GitHub »</strong></a>
     <br />
   </p>
 </div>
