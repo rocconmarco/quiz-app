@@ -12,6 +12,7 @@ const WelcomePage = () => {
       <img src={titleLogo} alt="Quiz App" className="max-w-full"></img>
       <img
         src={logo}
+        alt="Logo"
         className="h-32 sm:h-40 animate-ruotaLentamente -mt-12 mb-8 max-w-full"
       />
       <button onClick={() => navigate("/instructions")} className="h-14 w-44 rounded-3xl bg-gradient-to-br from-primary to-secondary text-white text-lg font-bold active:shadow-inner">
