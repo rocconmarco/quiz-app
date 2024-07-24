@@ -1,4 +1,3 @@
-import React from 'react'
 import useStore from '../../store/store.ts'
 import { Navigate } from 'react-router-dom'
 import SummaryPage from '../../pages/SummaryPage'

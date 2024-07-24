@@ -8,18 +8,16 @@ import ProtectedAnswersRoute from "./components/routing/ProtectedAnswersRoute.js
 import InfoPage from "./pages/InfoPage.jsx";
 
 function App() {
-  const userAnswers = useStore((state) => state.userAnswers);
-
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<WelcomePage />} />
-      <Route path="/instructions" element={<InstructionsPage />} />
-      <Route path="/quiz" element={<QuizPage />} />
-      <Route path="/summary" element={<ProtectedSummaryRoute />} />
-      <Route path="/answers" element={<ProtectedAnswersRoute />} />
-      <Route path="/info" element={<InfoPage />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<WelcomePage />} />
+        <Route path="/instructions" element={<InstructionsPage />} />
+        <Route path="/quiz" element={<QuizPage />} />
+        <Route path="/summary" element={<ProtectedSummaryRoute />} />
+        <Route path="/answers" element={<ProtectedAnswersRoute />} />
+        <Route path="/info" element={<InfoPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }

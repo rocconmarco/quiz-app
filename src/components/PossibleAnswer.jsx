@@ -1,5 +1,3 @@
-import React, { useState } from 'react'
-
 const PossibleAnswer = ({answer, isSelected, onSelect}) => {
     
   return (

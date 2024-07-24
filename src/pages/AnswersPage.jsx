@@ -1,4 +1,3 @@
-import React from "react";
 import useStore from "../store/store.ts";
 import UserAnswers from "../components/UserAnswers.jsx";
 import InfoButton from "../components/InfoButton.jsx";

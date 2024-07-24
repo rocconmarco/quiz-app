@@ -1,4 +1,3 @@
-import React from "react";
 import SummaryCard from "../components/SummaryCard";
 import useStore from "../store/store.ts";
 import InfoButton from "../components/InfoButton.jsx";

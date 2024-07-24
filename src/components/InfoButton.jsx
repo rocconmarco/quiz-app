@@ -1,4 +1,3 @@
-import React from "react";
 import { LuInfo } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Question from "./Question";
 import PossibleAnswer from "./PossibleAnswer";
 import { useNavigate } from "react-router-dom";

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import useStore from "../store/store.ts";

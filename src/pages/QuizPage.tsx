@@ -3,7 +3,6 @@ import QuestionCard from "../components/QuestionCard";
 import questionsList from "../questions/questions.ts";
 import useStore from "../store/store.ts";
 import logo from "../logo.png";
-import InfoButton from "../components/InfoButton.jsx";
 
 interface Question {
   readonly id: number;

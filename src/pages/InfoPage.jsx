@@ -1,8 +1,6 @@
-import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import logo from "../logo.png";
 import { useNavigate } from "react-router-dom";
-import { LuInfo } from "react-icons/lu";
 import { FaArrowLeft } from "react-icons/fa6";
 
 const InfoPage = () => {
