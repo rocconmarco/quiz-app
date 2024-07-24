@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import logo from "../logo.png";
 import titleLogo from "../title-logo.png";
-import { LuInfo } from "react-icons/lu";
 import InfoButton from "../components/InfoButton";
 
 const WelcomePage = () => {

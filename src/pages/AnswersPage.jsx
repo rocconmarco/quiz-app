@@ -8,8 +8,10 @@ const AnswersPage = () => {
   const correctAnswers = useStore((state) => state.correctAnswers);
   return (
     <div className="h-auto w-screen bg-slate-100 flex flex-col items-center justify-center p-6">
+      <div className="absolute right-3 top-6">
         <InfoButton />
-      <UserAnswers userAnswers={userAnswers} correctAnswers={correctAnswers}/>
+      </div>
+      <UserAnswers userAnswers={userAnswers} correctAnswers={correctAnswers} />
     </div>
   );
 };
